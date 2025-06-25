@@ -6,23 +6,23 @@ const PainPoints = () => {
   const painPoints = [
     {
       icon: <X className="w-6 h-6" />,
-      text: "GPA만 챙기고 활동은 0"
+      text: "❌ GPA만 챙기고 활동은 0"
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      text: "어떤 전공에 관심 있는지도 모른 채 2년 흐름"
+      text: "❌ 어떤 전공에 관심 있는지도 모른 채 2년 흐름"
     },
     {
       icon: <Users2 className="w-6 h-6" />,
-      text: "나중엔 다 똑같은 스펙, 차별성 없음"
+      text: "❌ 나중엔 다 똑같은 스펙, 차별성 없음"
     },
     {
       icon: <FileText className="w-6 h-6" />,
-      text: "유학원은 단순 행정만 대행 (비자, 이메일 등)"
+      text: "❌ 유학원은 단순 행정만 대행 (비자, 이메일 등)"
     },
     {
       icon: <AlertTriangle className="w-6 h-6" />,
-      text: "결국, 에세이 시즌에 가짜 스토리 급조"
+      text: "❌ 결국, 에세이 시즌에 가짜 스토리 급조"
     }
   ];
 
@@ -34,7 +34,7 @@ const PainPoints = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               😰 유학생 대부분이 겪는 문제,
             </h2>
-            <p className="text-2xl text-gray-700">혹시 당신도?</p>
+            <p className="text-2xl text-gray-700 font-medium">혹시 당신도?</p>
           </div>
 
           <div className="space-y-6">

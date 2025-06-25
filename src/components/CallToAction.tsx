@@ -21,7 +21,7 @@ const CallToAction = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Phone className="w-6 h-6 text-green-400" />
-              <h3 className="text-2xl font-bold">무료 컨설팅 신청하기</h3>
+              <h3 className="text-2xl font-bold">📞 무료 컨설팅 신청하기</h3>
             </div>
             <p className="text-lg text-gray-300 mb-6">
               👉 30분 온라인 상담으로 방향을 잡아보세요
