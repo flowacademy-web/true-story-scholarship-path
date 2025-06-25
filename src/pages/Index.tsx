@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import PainPoints from '@/components/PainPoints';
 import Solutions from '@/components/Solutions';
@@ -12,6 +13,7 @@ import CallToAction from '@/components/CallToAction';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       <Hero />
       <PainPoints />
       <Solutions />

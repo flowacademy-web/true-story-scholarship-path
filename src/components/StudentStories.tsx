@@ -14,7 +14,8 @@ const StudentStories = () => {
         "여름방학 스타트업 인턴",
         "UCB, UCLA, UCSD 합격"
       ],
-      icon: <GraduationCap className="w-6 h-6" />
+      icon: <GraduationCap className="w-6 h-6" />,
+      profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
     },
     {
       name: "이서윤",
@@ -26,7 +27,8 @@ const StudentStories = () => {
         "'조직 내 리더십' 주제로 에세이 구성",
         "UC Berkeley Haas, Columbia GS 합격"
       ],
-      icon: <Award className="w-6 h-6" />
+      icon: <Award className="w-6 h-6" />,
+      profileImage: "https://images.unsplash.com/photo-1494790108755-2616c27d9ba8?w=80&h=80&fit=crop&crop=face"
     },
     {
       name: "정시우",
@@ -38,7 +40,8 @@ const StudentStories = () => {
         "윤리 관련 블로그 운영 (5000+ 조회수)",
         "UCB, USC, UCLA 합격"
       ],
-      icon: <Users className="w-6 h-6" />
+      icon: <Users className="w-6 h-6" />,
+      profileImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
     }
   ];
 
@@ -60,10 +63,12 @@ const StudentStories = () => {
                 className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-start gap-6">
-                  <div className="bg-white p-4 rounded-full shadow-md">
-                    <div className="text-blue-600">
-                      {story.icon}
-                    </div>
+                  <div className="w-20 h-20 rounded-full overflow-hidden shadow-md">
+                    <img 
+                      src={story.profileImage} 
+                      alt={story.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1">
                     <div className="mb-4">
