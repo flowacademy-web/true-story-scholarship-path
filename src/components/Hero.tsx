@@ -6,31 +6,23 @@ import { GraduationCap, Users, Target, DollarSign } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 overflow-hidden">
-      {/* Video Background with Dark Overlay */}
+      {/* Vimeo Video Background with Dark Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source src="https://player.vimeo.com/progressive_redirect/playback/1096172600/rendition/1080p/file.mp4?loc=external&signature=c8b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4" type="video/mp4" />
-        </video>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="w-full h-full">
+          <iframe 
+            src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
+            className="w-full h-full object-cover"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            frameBorder="0" 
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Flow Prep Hero Video"
+          />
+        </div>
       </div>
 
       <div className="container mx-auto px-6 relative z-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
-            <p className="text-lg text-white/90 mb-4 font-medium">
-              플로우 프렙은 미국 CC편입 전문 대학 입시 컨설팅 에이전시입니다.
-            </p>
-            <p className="text-lg text-white/90 mb-6">
-              디아블로 밸리, 산타모니카, 디안자 컬리지등 CC에서 시작해 Top UC 및 Top 15 스쿨에 한국 학생들을 위한 맞춤형 지원으로 <span className="font-bold text-yellow-300">100% 편입 성공률</span>을 자랑합니다.
-            </p>
-          </div>
-
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             2년 뒤, 똑같은 프로필이 아닌,<br />
             <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
@@ -41,9 +33,18 @@ const Hero = () => {
           <p className="text-xl text-white/90 mb-4">
             GPA만으론 부족한 시대.
           </p>
-          <p className="text-xl text-white mb-12 font-medium">
+          <p className="text-xl text-white mb-6 font-medium">
             우리는 당신의 이야기와 성장을 함께 설계합니다.
           </p>
+
+          <div className="mb-8">
+            <p className="text-lg text-white/90 mb-4 font-medium">
+              플로우 프렙은 미국 CC편입 전문 대학 입시 컨설팅 에이전시입니다.
+            </p>
+            <p className="text-lg text-white/90 mb-6">
+              디아블로 밸리, 산타모니카, 디안자 컬리지등 CC에서 시작해 Top UC 및 Top 15 스쿨에 한국 학생들을 위한 맞춤형 지원으로 <span className="font-bold text-yellow-300">100% 편입 성공률</span>을 자랑합니다.
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
