@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import TransferCarousel from '@/components/TransferCarousel';
 import PainPoints from '@/components/PainPoints';
 import Solutions from '@/components/Solutions';
 import Advantages from '@/components/Advantages';
@@ -15,6 +16,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <TransferCarousel />
       <PainPoints />
       <Solutions />
       <Advantages />
