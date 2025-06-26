@@ -13,61 +13,41 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden">
-      {/* Responsive Vimeo Video Background with Dark Overlay */}
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Fully Responsive Video Background with Dark Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
-        <div className="relative w-full h-full overflow-hidden">
-          {/* Desktop/Tablet Video */}
-          <div className="hidden sm:block w-full h-full">
-            <iframe 
-              src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full object-cover"
-              style={{ 
-                aspectRatio: '16/9',
-                minWidth: '100vw',
-                minHeight: '100vh',
-                width: 'calc(100vh * 16/9)',
-                height: 'calc(100vw * 9/16)'
-              }}
-              frameBorder="0" 
-              allow="autoplay; fullscreen; picture-in-picture"
-              title="Flow Prep Hero Video"
-            />
-          </div>
-          
-          {/* Mobile Video - Optimized for portrait */}
-          <div className="block sm:hidden w-full h-full">
-            <iframe 
-              src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              style={{ 
-                width: '100vw',
-                height: '178vw', // 16:9 aspect ratio for mobile (100vw * 16/9)
-                minWidth: '100vw',
-                minHeight: '100vh'
-              }}
-              frameBorder="0" 
-              allow="autoplay; fullscreen; picture-in-picture"
-              title="Flow Prep Hero Video"
-            />
-          </div>
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div className="relative w-full h-full">
+          <iframe 
+            src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            style={{ 
+              width: '100%',
+              height: '100%',
+              minWidth: '100%',
+              minHeight: '100%',
+              objectFit: 'cover'
+            }}
+            frameBorder="0" 
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Flow Prep Hero Video"
+          />
         </div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+      <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
+        <div className="max-w-5xl mx-auto text-center py-8 sm:py-16">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             2년 뒤, 똑같은 프로필이 아닌,<br />
             <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
               진짜 나로 합격하자
             </span>
           </h1>
           
-          <p className="text-xl text-white/90 mb-4">
+          <p className="text-lg sm:text-xl text-white/90 mb-4">
             GPA만으론 부족한 시대.
           </p>
-          <p className="text-xl text-white mb-6 font-medium">
+          <p className="text-lg sm:text-xl text-white mb-6 font-medium">
             우리는 당신의 이야기와 성장을 함께 설계합니다.
           </p>
 
