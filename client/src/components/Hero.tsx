@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden m-0 p-0">
       {/* Desktop/Tablet: Similar to Mobile Style */}
       <div className="hidden sm:block bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -139,14 +139,17 @@ const Hero = () => {
       </div>
 
       {/* Mobile: Video Section Below Text */}
-      <div className="sm:hidden w-full h-64 overflow-hidden">
+      <div className="sm:hidden w-full h-64 overflow-hidden m-0 p-0">
         <iframe 
           src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-          className="w-full h-full border-0"
+          className="w-full h-full border-0 m-0 p-0 block"
           style={{ 
             width: '100%',
             height: '100%',
-            objectFit: 'cover'
+            objectFit: 'cover',
+            margin: 0,
+            padding: 0,
+            display: 'block'
           }}
           frameBorder="0" 
           allow="autoplay; fullscreen; picture-in-picture"
