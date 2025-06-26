@@ -139,21 +139,32 @@ const Hero = () => {
       </div>
 
       {/* Mobile: Video Section Below Text */}
-      <div className="sm:hidden w-screen overflow-hidden" style={{ margin: 0, padding: 0, height: '50vh', minHeight: '200px', maxHeight: '300px' }}>
+      <div 
+        className="sm:hidden relative w-full bg-black"
+        style={{ 
+          height: '56.25vw', // 16:9 aspect ratio
+          maxHeight: '300px',
+          minHeight: '200px',
+          margin: 0,
+          padding: 0,
+          overflow: 'hidden'
+        }}
+      >
         <iframe 
           src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-          className="border-0"
+          className="absolute inset-0 border-0"
           style={{ 
-            width: '100vw',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
             height: '100%',
             margin: 0,
             padding: 0,
-            display: 'block',
             border: 'none',
             outline: 'none',
-            verticalAlign: 'top',
-            lineHeight: 0,
-            fontSize: 0
+            transform: 'scale(1.1)',
+            transformOrigin: 'center center'
           }}
           frameBorder="0" 
           allow="autoplay; fullscreen; picture-in-picture"
