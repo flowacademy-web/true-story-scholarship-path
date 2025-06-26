@@ -11,43 +11,43 @@ const TransferCarousel = () => {
       from: 'Diablo Valley College',
       to: 'UC Berkeley',
       successCount: 87,
-      fromImage: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=200&fit=crop',
-      toImage: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=300&h=200&fit=crop'
+      fromImage: '/assets/logos/diablo-valley-college.png',
+      toImage: '/assets/logos/uc-berkeley.png'
     },
     {
       from: 'Santa Monica College',
       to: 'UCLA',
       successCount: 112,
-      fromImage: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=300&h=200&fit=crop',
-      toImage: 'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=300&h=200&fit=crop'
+      fromImage: '/assets/logos/santa-monica-college.png',
+      toImage: '/assets/logos/ucla.png'
     },
     {
       from: 'De Anza College',
       to: 'UC Irvine',
       successCount: 95,
-      fromImage: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=300&h=200&fit=crop',
-      toImage: 'https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?w=300&h=200&fit=crop'
+      fromImage: '/assets/logos/de-anza-college.png',
+      toImage: '/assets/logos/uc-irvine.png'
     },
     {
       from: 'Foothill College',
       to: 'UC San Diego',
       successCount: 63,
-      fromImage: 'https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=300&h=200&fit=crop',
-      toImage: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=300&h=200&fit=crop'
+      fromImage: '/assets/logos/foothill-college.png',
+      toImage: '/assets/logos/uc-san-diego.png'
     },
     {
       from: 'Diablo Valley College',
       to: 'Columbia University',
       successCount: 21,
-      fromImage: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=300&h=200&fit=crop',
-      toImage: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=300&h=200&fit=crop'
+      fromImage: '/assets/logos/diablo-valley-college.png',
+      toImage: '/assets/logos/columbia-university.png'
     },
     {
       from: 'Santa Monica College',
       to: 'USC',
       successCount: 49,
-      fromImage: 'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=300&h=200&fit=crop',
-      toImage: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=300&h=200&fit=crop'
+      fromImage: '/assets/logos/santa-monica-college.png',
+      toImage: '/assets/logos/usc.png'
     }
   ];
 
@@ -87,11 +87,11 @@ const TransferCarousel = () => {
                   <div className="flex items-center justify-center gap-8">
                     {/* From College */}
                     <div className="text-center flex-1">
-                      <div className="w-32 h-20 mx-auto mb-4 rounded-lg overflow-hidden">
+                      <div className="w-32 h-20 mx-auto mb-4 rounded-lg overflow-hidden bg-white p-2 shadow-md">
                         <img 
                           src={transfer.fromImage} 
                           alt={transfer.from}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
                       <h3 className="text-lg font-semibold mb-2">
@@ -108,11 +108,11 @@ const TransferCarousel = () => {
 
                     {/* To University */}
                     <div className="text-center flex-1">
-                      <div className="w-32 h-20 mx-auto mb-4 rounded-lg overflow-hidden">
+                      <div className="w-32 h-20 mx-auto mb-4 rounded-lg overflow-hidden bg-white p-2 shadow-md">
                         <img 
                           src={transfer.toImage} 
                           alt={transfer.to}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
                       <h3 className="text-lg font-semibold mb-2">
