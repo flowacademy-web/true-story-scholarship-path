@@ -14,19 +14,21 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Fully Responsive Video Background with Dark Overlay */}
+      {/* Full-Size Responsive Video Background with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
-        <div className="relative w-full h-full">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <iframe 
             src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full border-0"
             style={{ 
-              width: '100%',
-              height: '100%',
-              minWidth: '100%',
-              minHeight: '100%',
-              objectFit: 'cover'
+              width: '100vw',
+              height: '100vh',
+              minWidth: '100vw',
+              minHeight: '100vh',
+              objectFit: 'cover',
+              transform: 'scale(1.02)', // Slight scale to ensure no gaps
+              transformOrigin: 'center center'
             }}
             frameBorder="0" 
             allow="autoplay; fullscreen; picture-in-picture"
