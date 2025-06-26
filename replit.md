@@ -118,7 +118,10 @@ The application follows a modern full-stack architecture with the following comp
 # Changelog
 
 Changelog:
-- June 26, 2025. Initial setup
+- June 26, 2025: Initial setup
+- June 26, 2025: Fixed mobile video white space issues with CSS transforms and viewport optimizations
+- June 26, 2025: Added complete Korean content for all blog posts to fix "not found" errors
+- June 26, 2025: Applied gradient styling to "플로우프렙" and bold formatting to key phrases in Hero section
 
 # User Preferences
 
