@@ -16,7 +16,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Fully Responsive Video Background with Dark Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
         <div className="relative w-full h-full">
           <iframe 
             src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
@@ -36,26 +36,26 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
-        <div className="max-w-5xl mx-auto text-center py-8 sm:py-16">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <div className="max-w-5xl mx-auto text-center py-12 sm:py-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
             2년 뒤, 똑같은 프로필이 아닌,<br />
-            <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent drop-shadow-lg">
               진짜 나로 합격하자
             </span>
           </h1>
           
-          <p className="text-lg sm:text-xl text-white/90 mb-4">
+          <p className="text-lg sm:text-xl text-white mb-4 drop-shadow-md font-medium">
             GPA만으론 부족한 시대.
           </p>
-          <p className="text-lg sm:text-xl text-white mb-6 font-medium">
+          <p className="text-lg sm:text-xl text-white mb-8 font-semibold drop-shadow-md">
             우리는 당신의 이야기와 성장을 함께 설계합니다.
           </p>
 
-          <div className="mb-8 text-left max-w-3xl mx-auto">
-            <p className="text-lg text-white/90 mb-4 font-medium">
+          <div className="mb-8 text-center sm:text-left max-w-4xl mx-auto bg-black/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
+            <p className="text-base sm:text-lg text-white mb-4 font-medium drop-shadow-md">
               플로우 프렙은 미국 CC편입 전문 대학 입시 컨설팅 에이전시입니다.
             </p>
-            <p className="text-lg text-white/90 mb-6">
+            <p className="text-base sm:text-lg text-white mb-0 leading-relaxed drop-shadow-md">
               디아블로 밸리, 산타모니카, 디안자 컬리지 등 CC에서 시작해 한국 학생들을 위한 맞춤형 지원으로 Top UC 및 Top 15 스쿨에 <span className="font-bold text-yellow-300">100% 편입 성공률</span>을 자랑합니다. GPA만으론 부족한 시대, 플로우 프렙은 학생의 이야기와 성장을 함께 설계합니다.
             </p>
           </div>
