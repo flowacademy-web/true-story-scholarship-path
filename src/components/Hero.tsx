@@ -4,11 +4,19 @@ import { Button } from '@/components/ui/button';
 import { GraduationCap, Users, Target, DollarSign } from 'lucide-react';
 
 const Hero = () => {
+  const handleConsultationClick = () => {
+    window.open('https://calendly.com/flowprep', '_blank');
+  };
+
+  const handleKakaoClick = () => {
+    window.open('https://pf.kakao.com/_xexample', '_blank');
+  };
+
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       {/* Vimeo Video Background with Dark Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="w-full h-full">
           <iframe 
             src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
@@ -37,12 +45,12 @@ const Hero = () => {
             우리는 당신의 이야기와 성장을 함께 설계합니다.
           </p>
 
-          <div className="mb-8">
+          <div className="mb-8 text-left max-w-3xl mx-auto">
             <p className="text-lg text-white/90 mb-4 font-medium">
               플로우 프렙은 미국 CC편입 전문 대학 입시 컨설팅 에이전시입니다.
             </p>
             <p className="text-lg text-white/90 mb-6">
-              디아블로 밸리, 산타모니카, 디안자 컬리지등 CC에서 시작해 Top UC 및 Top 15 스쿨에 한국 학생들을 위한 맞춤형 지원으로 <span className="font-bold text-yellow-300">100% 편입 성공률</span>을 자랑합니다.
+              디아블로 밸리, 산타모니카, 디안자 컬리지 등 CC에서 시작해 한국 학생들을 위한 맞춤형 지원으로 Top UC 및 Top 15 스쿨에 <span className="font-bold text-yellow-300">100% 편입 성공률</span>을 자랑합니다. GPA만으론 부족한 시대, 플로우 프렙은 학생의 이야기와 성장을 함께 설계합니다.
             </p>
           </div>
 
@@ -69,16 +77,29 @@ const Hero = () => {
             </div>
           </div>
 
-          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-8">
-            👉 무료 상담받기
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Button 
+              size="lg" 
+              onClick={handleConsultationClick}
+              className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              👉 무료 상담받기
+            </Button>
+            <Button 
+              size="lg" 
+              onClick={handleKakaoClick}
+              className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              💬 카카오톡 채널
+            </Button>
+          </div>
 
           <div className="text-center">
             <p className="text-lg text-white/90 mb-2">
               "당신의 미국 대학 편입, 더 이상 혼자 고민하지 마세요."
             </p>
             <p className="text-lg text-white font-medium">
-              Flow Academy가 시작부터 편입까지 함께합니다.
+              Flow Prep이 시작부터 편입까지 함께합니다.
             </p>
           </div>
         </div>

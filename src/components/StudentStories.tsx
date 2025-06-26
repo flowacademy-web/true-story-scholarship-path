@@ -28,7 +28,7 @@ const StudentStories = () => {
         "UC Berkeley Haas, Columbia GS 합격"
       ],
       icon: <Award className="w-6 h-6" />,
-      profileImage: "https://images.unsplash.com/photo-1494790108755-2616c27d9ba8?w=80&h=80&fit=crop&crop=face"
+      profileImage: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=80&h=80&fit=crop&crop=face"
     },
     {
       name: "정시우",
@@ -41,26 +41,26 @@ const StudentStories = () => {
         "UCB, USC, UCLA 합격"
       ],
       icon: <Users className="w-6 h-6" />,
-      profileImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+      profileImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=80&h=80&fit=crop&crop=face"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               📚 실제 학생 사례
             </h2>
-            <p className="text-xl text-gray-600">Real Stories</p>
+            <p className="text-xl text-gray-300">Real Stories</p>
           </div>
 
           <div className="space-y-12">
             {stories.map((story, index) => (
               <div 
                 key={index}
-                className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-start gap-6">
                   <div className="w-20 h-20 rounded-full overflow-hidden shadow-md">
@@ -72,18 +72,18 @@ const StudentStories = () => {
                   </div>
                   <div className="flex-1">
                     <div className="mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      <h3 className="text-2xl font-bold mb-2">
                         🎓 {story.name} / {story.schools}
                       </h3>
-                      <blockquote className="text-lg text-gray-700 italic border-l-4 border-blue-500 pl-4">
+                      <blockquote className="text-lg text-gray-300 italic border-l-4 border-blue-500 pl-4">
                         "{story.quote}"
                       </blockquote>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4">
                       {story.journey.map((step, stepIndex) => (
                         <div key={stepIndex} className="flex items-center gap-3">
-                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                          <p className="text-gray-700">{step}</p>
+                          <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                          <p className="text-gray-300">{step}</p>
                         </div>
                       ))}
                     </div>

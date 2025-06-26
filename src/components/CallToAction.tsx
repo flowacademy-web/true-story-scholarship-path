@@ -1,9 +1,17 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, ArrowRight } from 'lucide-react';
+import { Phone, ArrowRight, MessageCircle } from 'lucide-react';
 
 const CallToAction = () => {
+  const handleConsultationClick = () => {
+    window.open('https://calendly.com/flowprep', '_blank');
+  };
+
+  const handleKakaoClick = () => {
+    window.open('https://pf.kakao.com/_xexample', '_blank');
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
       <div className="container mx-auto px-6">
@@ -27,13 +35,25 @@ const CallToAction = () => {
               👉 30분 온라인 상담으로 방향을 잡아보세요
             </p>
             
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105"
-            >
-              무료 상담 신청하기
-              <ArrowRight className="ml-2 w-6 h-6" />
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg" 
+                onClick={handleConsultationClick}
+                className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105"
+              >
+                무료 상담 신청하기
+                <ArrowRight className="ml-2 w-6 h-6" />
+              </Button>
+              
+              <Button 
+                size="lg" 
+                onClick={handleKakaoClick}
+                className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105"
+              >
+                카카오톡 채널 추가
+                <MessageCircle className="ml-2 w-6 h-6" />
+              </Button>
+            </div>
           </div>
 
           <p className="text-gray-400 text-sm">
