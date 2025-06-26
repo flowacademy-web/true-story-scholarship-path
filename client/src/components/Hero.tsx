@@ -14,18 +14,44 @@ const Hero = () => {
 
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Vimeo Video Background with Dark Overlay */}
+      {/* Responsive Vimeo Video Background with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/30 z-10"></div>
-        <div className="w-full h-full">
-          <iframe 
-            src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-            className="w-full h-full object-cover"
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-            frameBorder="0" 
-            allow="autoplay; fullscreen; picture-in-picture"
-            title="Flow Prep Hero Video"
-          />
+        <div className="relative w-full h-full overflow-hidden">
+          {/* Desktop/Tablet Video */}
+          <div className="hidden sm:block w-full h-full">
+            <iframe 
+              src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full object-cover"
+              style={{ 
+                aspectRatio: '16/9',
+                minWidth: '100vw',
+                minHeight: '100vh',
+                width: 'calc(100vh * 16/9)',
+                height: 'calc(100vw * 9/16)'
+              }}
+              frameBorder="0" 
+              allow="autoplay; fullscreen; picture-in-picture"
+              title="Flow Prep Hero Video"
+            />
+          </div>
+          
+          {/* Mobile Video - Optimized for portrait */}
+          <div className="block sm:hidden w-full h-full">
+            <iframe 
+              src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              style={{ 
+                width: '100vw',
+                height: '178vw', // 16:9 aspect ratio for mobile (100vw * 16/9)
+                minWidth: '100vw',
+                minHeight: '100vh'
+              }}
+              frameBorder="0" 
+              allow="autoplay; fullscreen; picture-in-picture"
+              title="Flow Prep Hero Video"
+            />
+          </div>
         </div>
       </div>
 
