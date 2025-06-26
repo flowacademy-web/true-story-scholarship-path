@@ -122,6 +122,9 @@ Changelog:
 - June 26, 2025: Fixed mobile video white space issues with CSS transforms and viewport optimizations
 - June 26, 2025: Added complete Korean content for all blog posts to fix "not found" errors
 - June 26, 2025: Applied gradient styling to "플로우프렙" and bold formatting to key phrases in Hero section
+- June 26, 2025: Updated navigation bar with white background for better contrast against dark Hero section
+- June 26, 2025: Replaced college logo placeholders with local file paths for authentic branding
+- June 26, 2025: Added statistics section to Hero with 100% admission rate, 200+ Korean students, and UC/Ivy transfers
 
 # User Preferences
 
