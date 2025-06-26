@@ -60,8 +60,8 @@ const Hero = () => {
       </div>
 
       {/* Mobile: Text Content First */}
-      <div className="sm:hidden bg-gray-900">
-        <div className="container mx-auto px-4 py-12">
+      <div className="sm:hidden bg-gray-900" style={{ margin: 0, padding: 0 }}>
+        <div className="container mx-auto px-4" style={{ paddingTop: '3rem', paddingBottom: 0, marginBottom: 0 }}>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl font-bold text-white mb-6 leading-tight">
               2년 뒤, 똑같은 프로필이 아닌,<br />
@@ -139,17 +139,21 @@ const Hero = () => {
       </div>
 
       {/* Mobile: Video Section Below Text */}
-      <div className="sm:hidden w-full h-64 overflow-hidden m-0 p-0">
+      <div className="sm:hidden w-screen overflow-hidden" style={{ margin: 0, padding: 0, height: '50vh', minHeight: '200px', maxHeight: '300px' }}>
         <iframe 
           src="https://player.vimeo.com/video/1096172600?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0" 
-          className="w-full h-full border-0 m-0 p-0 block"
+          className="border-0"
           style={{ 
-            width: '100%',
+            width: '100vw',
             height: '100%',
-            objectFit: 'cover',
             margin: 0,
             padding: 0,
-            display: 'block'
+            display: 'block',
+            border: 'none',
+            outline: 'none',
+            verticalAlign: 'top',
+            lineHeight: 0,
+            fontSize: 0
           }}
           frameBorder="0" 
           allow="autoplay; fullscreen; picture-in-picture"
