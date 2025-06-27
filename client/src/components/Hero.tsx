@@ -35,9 +35,24 @@ const Hero = () => {
               <p className="text-base sm:text-lg text-white mb-4 font-medium">
                 <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent font-bold">플로우프렙</span>은 미국 <span className="font-bold underline decoration-blue-400 decoration-2">CC편입 전문 대학 입시 컨설팅</span> 에이전시입니다.
               </p>
-              <p className="text-base sm:text-lg text-white mb-0 leading-relaxed">
+              <p className="text-base sm:text-lg text-white mb-6 leading-relaxed">
                 디아블로 밸리, 산타모니카, 디안자 컬리지 등 CC에서 시작해 한국 학생들을 위한 맞춤형 지원으로 <span className="font-bold">Top UC 및 Top 15 스쿨</span>에 <span className="font-bold text-blue-400 underline decoration-blue-400 decoration-2">100% 편입 성공률</span>을 자랑합니다. GPA만으론 부족한 시대, 플로우 프렙은 학생의 이야기와 성장을 함께 설계합니다.
               </p>
+              
+              <div className="flex items-center justify-center space-x-8 pt-8">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-400">100%</div>
+                  <div className="text-sm text-gray-400">Admission Rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-green-400">200+</div>
+                  <div className="text-sm text-gray-400">Korean Students</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-purple-400">UC/Ivy</div>
+                  <div className="text-sm text-gray-400">Transfers</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
